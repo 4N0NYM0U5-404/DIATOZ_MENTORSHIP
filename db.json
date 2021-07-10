@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "username": "Kavita",
+      "password": "kp@6690"
+    },
+    {
+      "username": "Vishaka",
+      "password": "vc@777"
+    },
+    {
+      "username": "VP",
+      "password": "vp@123"
+    },
+    {
+      "username": "PB",
+      "password": "pb@456"
+    },
+    {
+      "username": "AG",
+      "password": "ag@789"
+    },
+    {
+      "username": "AB",
+      "password": "ab@101"
+    },
+    {
+      "username": "TC",
+      "password": "tc@102"
+    },
+    {
+      "id": "Sat Jul 10 2021 17:17:47 GMT+0530 (India Standard Time) 112.50469583791592",
+      "firstname": "Mohan",
+      "lastname": "P",
+      "username": "MP",
+      "password": "7773285"
+    }
+  ]
+}
