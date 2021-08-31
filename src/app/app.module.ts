@@ -2,17 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule, routingComponent } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { HomeComponent } from './home/home.component';
 import { HttpClientModule} from '@angular/common/http';
+import { HomeModule } from './home/home.module';
 
+import { AuthGuard } from './auth_guard.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponent,
-    HomeComponent
+    routingComponent
   ],
   imports: [
     BrowserModule,
@@ -20,13 +21,9 @@ import { HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    HomeModule
   ],
-  providers: [
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: ErrorIntercept
-    // }
-  ],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

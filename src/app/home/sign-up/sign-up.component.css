@@ -1,18 +1,30 @@
+body{
+  background-image: linear-gradient(#44aa79, #bdebd4);;
+}
+
 .form-structure {
-	background-color: rgb(205, 233, 245);
-  border: 2px solid rgb(167, 223, 233);
-	border-radius: 15px;
-  margin: 0 auto;
-  /* width:250px; */
+  /* margin: 0 auto;
 	height: 400px;
 	width: 450px;
 	position: relative;
 	overflow: hidden;
+  text-align: center; */
+
+  background-color: #69f0ae;
+	border-radius: 15px ;
+	height: 560px;
+	width: 450px;
+  box-shadow: 10px 10px #d1d4d2;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -270px;
+  margin-left: -200px;
  }
 
  .submit-btn{
-  background-color: rgb(40, 139, 182);
+  background-color: #2E7D32;
   border: none;
   color: white;
   padding: 10px;
@@ -20,7 +32,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 15px auto;
   cursor: pointer;
   border-radius: 8px;
  }
@@ -30,4 +42,8 @@ input{
   border-radius: 4px;
   padding: 12px 20px;
   margin: 10px ;
+}
+
+a{
+  cursor: pointer;
 }

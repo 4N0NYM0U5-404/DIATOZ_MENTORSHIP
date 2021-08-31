@@ -1,0 +1,71 @@
+<!-- <h1>SIGNUP</h1>
+
+<form [formGroup]= 'signupForm'>
+  <label>First Name:</label><br>
+  <input type="text" formControlName="fname">
+  <span class="error" *ngIf="fname && fname.invalid && (fname.dirty || fname.touched)">First name is required!</span><br>
+
+  <label>Last Name:</label><br>
+  <input type="text" formControlName="lname">
+  <span class="error" *ngIf="lname && lname.invalid && (lname.dirty || lname.touched)">Last name is required!</span><br>
+
+  <label>Username:</label><br>
+  <input type="text" formControlName="username">
+  <span class="error" *ngIf="username && username.invalid && (username.dirty || username.touched)">Username is required!</span><br>
+
+  <label>Password:</label><br>
+  <input type="password" formControlName="password">
+  <span class="error" *ngIf="password && password.invalid && (password.dirty || password.touched)">Password is required!</span><br><br>
+
+  <button type="button">Sign up</button>
+
+</form> -->
+
+<!-- {{signupForm.value | json}} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="form-structure">
+
+    <div class="center">
+      <h2 class="form-title">Sign up</h2>
+    </div>
+
+    <div class="form">
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+
+        <div class="input-fields">
+
+          <input type="text" class="input" name="fname" placeholder="First Name" formControlName="fname">
+
+          <input type="text" class="input" name="lname" placeholder="Last Name" formControlName="lname">
+
+          <input type="email" class="input" name="email" placeholder="Email" formControlName="email"> <br>
+
+          <input type="date" class="input" name="dob" placeholder="Date of Birth" formControlName="dob"> <br>
+
+          <input type="text" class="input" name="username" placeholder="Username" formControlName="username">
+
+          <input type="tel" class="input" name="tel" placeholder="Phone Number" formControlName="tel"> <br>
+
+          <input type="password" class="input" name="password" placeholder="Password" formControlName="password"> <br>
+
+          <button type="submit" class="submit-btn">Sign up</button> <br>
+
+          <a routerLink="/">Log in</a>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+

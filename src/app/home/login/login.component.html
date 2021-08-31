@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="form-structure">
+
+    <div class="form">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <div class="input-fields">
+          <input type="text" class="input" name="username" placeholder="Username" formControlName="username"> <br>
+          <!-- <span class="error" *ngIf="username && username.invalid && (username.dirty || username.touched)">Username is required!</span> <br> -->
+
+          <input type="password" class="input" name="password" placeholder="Password" formControlName="password"> <br>
+          <!-- <span class="error"  *ngIf="password && password.invalid && (password.dirty || password.touched)">Password is required!</span><br><br> -->
+
+          <button type="submit" class="submit-btn">Login</button> <br>
+
+          <a routerLink="/signup">Sign up</a>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
