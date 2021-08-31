@@ -1,0 +1,30 @@
+nav {
+  background-color: #69F0AE;
+  overflow: hidden;
+  /* border-radius: 15px; */
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  float: left;
+  color: #1B5E20;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  /* background-color: #24bd16; */
+  color: white;
+}
+
+#logout{
+  float: right;
+}
+
+#logout:hover{
+  background-color: #B71C1C;
+}
+
